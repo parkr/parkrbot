@@ -9,10 +9,9 @@
 
 module.exports = (robot) ->
   
+  robot.brain.data.groceryList = []
   groceryList =
     get: ->
-      unless robot.brain.data.grocerylist?
-        robot.brain.data.groceryList = []
       robot.brain.data.groceryList
       
     add: (item) ->
