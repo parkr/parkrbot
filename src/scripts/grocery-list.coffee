@@ -9,19 +9,23 @@
 
 module.exports = (robot) ->
   
-  robot.brain.data.groceryList = []
+  robot.brain.data.groceryList =
+    toBuy: {},
+    purchased: {}
   groceryList =
     get: ->
-      robot.brain.data.groceryList
+      Object.keys(robot.brain.data.groceryList.toBuy)
       
     add: (item) ->
-      robot.brain.data.groceryList.push item
+      robot.brain.data.groceryList.toBuy[item] = true
       
     remove: (item) ->
-      delete robot.brain.data.groceryList[item]
+      delete robot.brain.data.groceryList.toBuy[item]
+      robot.brain.data.groceryList.purchased[item] = true
       
     bought: (item) ->
-      delete robot.brain.data.groceryList[item]
+      delete robot.brain.data.groceryList.toBuy[item]
+      robot.brain.data.groceryList.purchased[item] = true
       
   robot.respond /grocery list$/i, (msg) ->
     list = groceryList.get().join("\n") || "No items in your grocery list."
