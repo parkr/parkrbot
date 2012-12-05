@@ -11,3 +11,9 @@ module.exports = (robot) ->
 
   robot.respond /whatup$/i, (msg) ->
     msg.send "just the same old server livin. you?"
+
+  robot.respond /you suck/i, (msg) ->
+    msg.send "robot sad."
+
+  robot.respond /how are you(\?)?/i, (msg) ->
+    msg.send "just swell. how you doin'?"
