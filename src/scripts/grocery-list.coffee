@@ -48,3 +48,7 @@ module.exports = (robot) ->
     item = msg.match[1].trim()
     groceryList.remove item
     msg.send "ok, removed #{item} from your grocery list."
+  
+  robot.respond /what have i purchased/i, (msg) ->
+    list = groceryList.getPurchased().join("\n") || "You haven't purchased anything."
+    msg.send list
