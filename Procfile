@@ -1,1 +1,1 @@
-web: bin/hubot -a campfire -n parkerhubot
+web: bin/hubot -a campfire -n hubot
