@@ -11,7 +11,7 @@ module.exports = (robot) ->
   
   groceryList =
     get: ->
-      unless robot.brain.data.grocerylist
+      unless robot.brain.data.grocerylist?
         robot.brain.data.groceryList = []
       robot.brain.data.groceryList
       
@@ -28,7 +28,7 @@ module.exports = (robot) ->
     list = groceryList.get().join("\n") || "No items in your grocery list."
     msg.send list
   
-  robot.respond /remind me to buy (.*)/i, (msg) ->
+  robot.respond /remind me to (buy|get) (.*)/i, (msg) ->
     item = msg.match[1].trim()
     groceryList.add item
     msg.send "ok, added #{item} to your grocery list."
