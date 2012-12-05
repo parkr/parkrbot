@@ -28,7 +28,7 @@ module.exports = (robot) ->
     msg.send list
   
   robot.respond /remind me to (buy|get) (.*)/i, (msg) ->
-    item = msg.match[1].trim()
+    item = msg.match[2].trim()
     groceryList.add item
     msg.send "ok, added #{item} to your grocery list."
 
