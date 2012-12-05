@@ -15,6 +15,9 @@ module.exports = (robot) ->
   groceryList =
     get: ->
       Object.keys(robot.brain.data.groceryList.toBuy)
+    
+    getPurchased: ->
+      Object.keys(robot.brain.data.groceryList.purchased)
       
     add: (item) ->
       robot.brain.data.groceryList.toBuy[item] = true
