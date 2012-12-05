@@ -24,7 +24,7 @@ module.exports = (robot) ->
       
     remove: (item) ->
       delete robot.brain.data.groceryList.toBuy[item]
-      robot.brain.data.groceryList.purchased[item] = true
+      true
       
     bought: (item) ->
       delete robot.brain.data.groceryList.toBuy[item]
