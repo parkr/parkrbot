@@ -1,11 +1,20 @@
 # Description:
 #   Organize your grocery list
 #
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
 # Commands:
 #   hubot grocery list - list items on your grocery list
 #   hubot remind me to buy <item> - add item to grocery list
 #   hubot i bought <item> - mark item as purchased
 #   hubot remove <item> from my grocery lists
+#
+# Author:
+#   parkr
 
 module.exports = (robot) ->
   
