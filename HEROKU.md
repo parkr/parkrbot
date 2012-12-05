@@ -2,6 +2,7 @@
 
 1. Clone this repo
 2. Run these commands:
+
 ```bash
     heroku create
     rm -rf .git
@@ -17,6 +18,7 @@
     heroku config:add HUBOT_CAMPFIRE_TOKEN="myhubotusercampfiretoken"
     heroku restart
 ```
+
 3. Easy as pie.
 
 Check `heroku logs` if anything is going wrong.
