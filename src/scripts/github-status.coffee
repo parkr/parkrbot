@@ -1,5 +1,5 @@
 # Description:
-#   A way to interact with the Google Images API.
+#   How's Github doing?
 #
 # Commands:
 #   hubot github status - returns github status (also "gh st", or just "github" or "gh")
