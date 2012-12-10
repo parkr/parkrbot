@@ -12,7 +12,7 @@ module.exports = (robot) ->
     getStatus msg, (status) ->
       msg.send status
 
-getStatus = (msg) ->
+getStatus = (msg, cb) ->
   msg.http('https://status.github.com/api/last-message.json')
     .get() (err, res, body) ->
       result = JSON.parse(body)
