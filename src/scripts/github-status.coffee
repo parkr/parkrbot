@@ -41,7 +41,7 @@ monthInWords =
 endingForDay = (dayOfMonth) ->
   if dayOfMonth >= 11 and dayOfMonth <= 13
     return "th"
-  switch n % 10
+  switch dayOfMonth % 10
     when 1 then return "st"
     when 2 then return "nd"
     when 3 then return "rd"
