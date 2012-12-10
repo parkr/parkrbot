@@ -2,10 +2,7 @@
 #   A way to interact with the Google Images API.
 #
 # Commands:
-#   hubot image me <query> - The Original. Queries Google Images for <query> and returns a random top result.
-#   hubot animate me <query> - The same thing as `image me`, except adds a few parameters to try to return an animated GIF instead.
-#   hubot mustache me <url> - Adds a mustache to the specified URL.
-#   hubot mustache me <query> - Searches Google Images for the specified query and mustaches it.
+#   hubot github status - returns github status (also "gh st", or just "github" or "gh")
 
 module.exports = (robot) ->
   robot.respond /(github|gh)( (status|st))?/i, (msg) ->
@@ -25,4 +22,27 @@ formatDate = (date) ->
   hour = date.getHours()
   minute = date.getMinutes()
   second = date.getSeconds()
-  return "#{hour}#{minute} on #{month} #{day}, #{year}"
+  return "#{hour}:#{minute} on #{monthInWords[month]} #{day}#{endingForDay(day)}, #{year}"
+
+monthInWords =
+  1: "January",
+  2: "February",
+  3: "March",
+  4: "April",
+  5: "May",
+  6: "June",
+  7: "July",
+  8: "August",
+  9: "September",
+  10: "October",
+  11: "November",
+  12: "December"
+
+endingForDay = (dayOfMonth) ->
+  if dayOfMonth >= 11 and dayOfMonth <= 13
+    return "th"
+  switch n % 10
+    when 1 then return "st"
+    when 2 then return "nd"
+    when 3 then return "rd"
+    else return "th"
