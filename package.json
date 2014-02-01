@@ -32,7 +32,8 @@
     "nodepie": "~0.6.3",
     "soupselect": "~0.2.0",
     "htmlparser": "~1.7.7",
-    "jsdom": "~0.8.11"
+    "jsdom": "~0.8.11",
+    "xml2js": "~0.4.1"
   },
   "engines": {
     "node": ">= 0.8.x",
