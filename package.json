@@ -1,9 +1,7 @@
 {
   "name": "parkrbot",
   "version": "1.0.0",
-
   "author": "GitHub Inc.",
-
   "keywords": [
     "github",
     "hubot",
@@ -11,32 +9,30 @@
     "bot",
     "parkr"
   ],
-
   "description": "A robot for the parkr",
-
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/parkr/parkrbot/raw/master/LICENSE"
-  }],
-
-  "repository" : {
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/parkr/parkrbot/raw/master/LICENSE"
+    }
+  ],
+  "repository": {
     "type": "git",
     "url": "https://github.com/parkr/parkrbot.git"
   },
-
   "dependencies": {
-    "hubot":             ">= 2.6.0 < 3.0.0",
-    "hubot-scripts":     ">= 2.5.0 < 3.0.0",
-    "githubot":          ">= 0.4.1 < 0.5.0",
-    "twit":              ">= 1.1.11 < 2.0.0",
-    "underscore":        ">= 1.5.2 < 2.0.0",
+    "hubot": ">= 2.6.0 < 3.0.0",
+    "hubot-scripts": ">= 2.5.0 < 3.0.0",
+    "githubot": ">= 0.4.1 < 0.5.0",
+    "twit": ">= 1.1.11 < 2.0.0",
+    "underscore": ">= 1.5.2 < 2.0.0",
     "underscore.string": ">= 2.3.3 < 3.0.0",
-    "url":               "",
-    "querystring":       ""
+    "url": "",
+    "querystring": "",
+    "nodepie": "~0.6.3"
   },
-
   "engines": {
     "node": ">= 0.8.x",
-    "npm":  ">= 1.1.x"
+    "npm": ">= 1.1.x"
   }
 }
