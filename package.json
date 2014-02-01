@@ -29,7 +29,8 @@
     "underscore.string": ">= 2.3.3 < 3.0.0",
     "url": "",
     "querystring": "",
-    "nodepie": "~0.6.3"
+    "nodepie": "~0.6.3",
+    "soupselect": "~0.2.0"
   },
   "engines": {
     "node": ">= 0.8.x",
