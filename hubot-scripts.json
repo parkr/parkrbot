@@ -26,6 +26,12 @@
   "octocat.coffee",
   "play.coffee",
   "quote.coffee",
+  "github-commit-link.coffee",
+  "github-issues.coffee",
+  "github-issue-link.coffee",
+  "github-pulls.coffee",
+  "github-pull-request-notifier.coffee",
+  "github-search.coffee",
   "redis-brain.coffee",
   "script.coffee",
   "shipit.coffee",
@@ -34,5 +40,7 @@
   "wat.coffee",
   "whatis.coffee",
   "xkcd.coffee",
-  "yoda-quotes.coffee"
+  "yoda-quotes.coffee",
+  "tweeter.coffee",
+  "zen.coffee"
 ]
