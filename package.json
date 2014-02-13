@@ -1,6 +1,6 @@
 {
   "name": "parkrbot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "GitHub Inc.",
   "keywords": [
     "github",
@@ -34,7 +34,8 @@
     "htmlparser": "~1.7.7",
     "jsdom": "~0.8.11",
     "xml2js": "~0.4.1",
-    "hubot-github-pages": "0.0.2"
+    "hubot-github-pages": "0.0.2",
+    "timeago": "~0.1.0"
   },
   "engines": {
     "node": ">= 0.8.x",
