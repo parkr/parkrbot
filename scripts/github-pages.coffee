@@ -55,6 +55,7 @@ formatted_build_text = (build) ->
 module.exports = (robot) ->
   github = require("githubot")(robot)
   robot.respond /pages (\w+)( \w+\/\w+)?/i, (msg) ->
+    console.log("Triggered!", msg)
     command   = msg.match[1].strip()
     repo      = github.qualified_repo msg.match[2]
 
